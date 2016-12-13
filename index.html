@@ -51,7 +51,7 @@ if (seconds <= 9) {
   seconds = '0' + seconds;
 }
 var clockFace = hours + ':' + minutes + ':' + seconds;
-var hexColor = '#' + 'ff' + minutes + seconds;
+var hexColor = '#' + hours + 'ff' + seconds;
 document.getElementById('clock').innerHTML = clockFace;
   setTimeout(function() {
     colorClock();
